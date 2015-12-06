@@ -5,7 +5,6 @@ public class Car {
 
     public Car() {
         System.out.println("Test car constructor");
-
     }
 
 }

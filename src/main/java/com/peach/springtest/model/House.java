@@ -11,13 +11,15 @@ import javax.annotation.PreDestroy;
 @Component
 public class House implements InitializingBean, DisposableBean{
 
-
     private Person person;
     private Car car;
 
-
     public House() {
         System.out.println("Test house Constructor");
+    }
+
+    public void status(){
+        System.out.println("There is one person and one car");
     }
 
     @Autowired
