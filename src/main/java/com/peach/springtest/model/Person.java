@@ -17,13 +17,6 @@ public class Person implements InitializingBean{
         System.out.println("Test Person constructor");
     }
 
-/*
-    public void setCat(Car car) {
-        System.out.println("Test setCar");
-        this.car = car;
-    }*/
-
-
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("Test Person afterPropertiesSet");
