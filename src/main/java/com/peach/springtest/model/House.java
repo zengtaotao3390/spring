@@ -4,13 +4,10 @@ import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-/**
- * Created by y400 on 2015/12/6.
- */
+
 @Component
 public class House implements InitializingBean, DisposableBean{
 

@@ -1,16 +1,11 @@
 package com.peach.springtest.model;
 
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 
-/**
- * Created by y400 on 2015/12/6.
- */
 @Component
-public class Person implements InitializingBean{
+public class Person implements InitializingBean {
 
 
     public Person() {
