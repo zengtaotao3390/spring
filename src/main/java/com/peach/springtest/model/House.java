@@ -3,30 +3,26 @@ package com.peach.springtest.model;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 
-@Component
-public class House implements InitializingBean, DisposableBean{
+public class House implements InitializingBean, DisposableBean {
 
     private Person person;
+
+    @Autowired
     private Car car;
 
     public House() {
         System.out.println("Test house Constructor");
     }
 
-    public void status(){
+    public void status() {
         System.out.println("There is one person and one car");
     }
 
     @Autowired
-    public void setCarAutowired(Car car){
-        System.out.println("Test car Autowired");
-        this.car = car;
-    }
 
     public void setPerson(Person person) {
         System.out.println("Test House setPerson");
@@ -57,7 +53,7 @@ public class House implements InitializingBean, DisposableBean{
         System.out.println("Test house destroy");
     }
 
-    public void destoryMethod() {
+    public void destroyMethod() {
         System.out.println("Test house destroyMethod");
     }
 }

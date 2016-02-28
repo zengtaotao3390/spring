@@ -10,9 +10,8 @@
 
     <!--<context:component-scan base-package="com.peach.springtest.*"/>-->
 
-
     <context:annotation-config />
-    <bean id="house" class="com.peach.springtest.model.House" init-method="initMethod" destroy-method="destoryMethod">
+    <bean id="house" class="com.peach.springtest.model.House" init-method="initMethod" destroy-method="destroyMethod">
         <property name="person" ref="person"/>
     </bean>
     <bean id="person" class="com.peach.springtest.model.Person"/>
